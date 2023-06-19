@@ -33,8 +33,8 @@ app.use((err, req, res, next) => {
 });
 
 /** socket config */
-server.listen(3030, () => {
-  console.log(`socket running on LocalHost: 3030`);
+server.listen(3000, () => {
+  console.log(`socket running on LocalHost: 3000`);
 });
 const connections = [];
 io.on("connection", (socket) => {

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 module.exports = async () => {
     try {
-        const database_url = process.env.DB_URL.replace(/<password>/g, process.env.PASSWORD);
+        const database_url ="mongodb://localhost:27017/library";
         const connect = await mongoose.connect(database_url, {
             useNewUrlParser: true,
             useUnifiedTopology: true
