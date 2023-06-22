@@ -59,7 +59,7 @@ exports.createUser = (req, res) => {
         message: err.message || "Error during user creation",
       });
     });
-};
+  };
 
 exports.findUsers = (req, res) => {
   let filter_object = {};

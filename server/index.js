@@ -15,7 +15,7 @@ const routes = require("./routes/routes");
 
 const userModel = require("./models/userModel");
 
-dotenv.config({ path: "./config.env" });
+dotenv.config({ path: "./.env" });
 
 const PORT = process.env.PORT || 5000;
 
